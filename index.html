@@ -6,7 +6,6 @@
     <title>Geometry Calculation</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 <body>
     <header class="flex justify-between m-8 bg-teal-200 p-5 rounded-lg">
@@ -14,71 +13,78 @@
             <h1 class="font-bold text-4xl">PRCHOW</h1>
             <h3 class="text-2xl">Geometry Calculation</h3>
         </div>
-        <button class="bg-cyan-500 px-9 text-white font-bold rounded-lg">Blog</button>
+        <button id="btn-blog" class="bg-cyan-500 px-9 text-white font-bold rounded-lg">Blog</button>
     </header>
 
-    <main class="m-5 p-5 rounded-lg geometry-part">
-        <section class="grid grid-cols-3 md:grid-rows-1 bg-slate-200 p-2 rounded-lg ">
+    <main class="lg:flex m-5 p-5 rounded-lg">
+        <!-- Geometry Calculation Options  -->
+        <section class="grid md:grid-cols-3 bg-slate-100 p-2 rounded-lg">
             <!-- Triangle -->
-            <div class="p-5">
+            <div class="p-2 my-3 hover:bg-slate-200 rounded-lg">
                 <img src="images/triangle.png" alt="">
                 <h2 class="text-3xl py-3">Triangle</h2>
                 <h3 class="text-1xl py-3">Area (A) = 0.5 * b * h</h3>
-                <input class="border-2" type="text" placeholder="b"> cm
-                <input type="text" placeholder="h"> cm <br>
+                <input class="border-3 rounded p-2" type="text" placeholder="b"> cm
+                <input class="my-3 border-3 rounded p-2" type="text" placeholder="h"> cm <br>
                 <button class="bg-cyan-500 px-9 text-white font-bold rounded-lg my-3 py-2">Calculation</button>
             </div>
             <!-- Rectangle -->
-            <div class="p-5">
+            <div class="p-2 my-3 hover:bg-slate-200 rounded-lg">
                 <img src="images/rectangle.png" alt="">
                 <h2 class="text-3xl py-3">Rectangle</h2>
-                <h3 class="text-1xl py-3">Area (A) = 0.5 * b * h</h3>
-                <input class="border-2" type="text" placeholder="b"> cm
-                <input type="text" placeholder="h"> cm <br>
+                <h3 class="text-1xl py-3">Area (A) = w * l</h3>
+                <input class="border-3 rounded p-2" type="text" placeholder="b"> cm
+                <input class="my-3 border-3 rounded p-2" type="text " placeholder="h"> cm <br>
                 <button class="bg-cyan-500 px-9 text-white font-bold rounded-lg my-3 py-2">Calculation</button>
             </div>
             <!-- Parallelogram -->
-            <div class="p-5">
+            <div class="p-2 my-3 hover:bg-slate-200 rounded-lg">
                 <img src="images/parallelogram.png" alt="">
                 <h2 class="text-3xl py-3">Parallelogram</h2>
-                <h3 class="text-1xl py-3">Area (A) = 0.5 * b * h</h3>
-                <input class="border-2" type="text" placeholder="b"> cm
-                <input type="text" placeholder="h"> cm <br>
+                <h3 class="text-1xl py-3">Area (A) = b * h</h3>
+                <input class="border-3 rounded p-2" type="text" placeholder="b"> cm
+                <input class="my-3 border-3 rounded p-2" type="text" placeholder="h"> cm <br>
                 <button class="bg-cyan-500 px-9 text-white font-bold rounded-lg my-3 py-2">Calculation</button>
             </div>
             <!-- Rhombus -->
-            <div class="p-5">
+            <div class="p-2 my-3 hover:bg-slate-200 rounded-lg">
                 <img src="images/rhombus.png" alt="">
                 <h2 class="text-3xl py-3">Rhombus</h2>
-                <h3 class="text-1xl py-3">Area (A) = 0.5 * b * h</h3>
-                <input class="border-2" type="text" placeholder="b"> cm
-                <input type="text" placeholder="h"> cm <br>
+                <h3 class="text-1xl py-3">Area (A) = 0.5 * d1 * d2</h3>
+                <input class="border-3 rounded p-2" type="text" placeholder="b"> cm
+                <input class="my-3 border-3 rounded p-2" type="text" placeholder="h"> cm <br>
                 <button class="bg-cyan-500 px-9 text-white font-bold rounded-lg my-3 py-2">Calculation</button>
             </div>
             <!-- Pentagon -->
-            <div class="p-2">
+            <div class="p-2 my-3 hover:bg-slate-200 rounded-lg">
                 <img src="images/pentagon.png" alt="">
                 <h2 class="text-3xl py-3">Pentagon</h2>
-                <h3 class="text-1xl py-3">Area (A) = 0.5 * b * h</h3>
-                <input class="border-2" type="text" placeholder="b"> cm
-                <input type="text" placeholder="h"> cm <br>
+                <h3 class="text-1xl py-3">Area (A) = 0.5 * p * b</h3>
+                <input class="border-3 rounded p-2" type="text" placeholder="b"> cm
+                <input class="my-3 border-3 rounded p-2" type="text" placeholder="h"> cm <br>
                 <button class="bg-cyan-500 px-9 text-white font-bold rounded-lg my-3 py-2">Calculation</button>
             </div>
             <!-- Ellipse -->
-            <div class="p-5">
+            <div class="p-2 my-3 hover:bg-slate-200 rounded-lg">
                 <img src="images/ellipse.png" alt="">
                 <h2 class="text-3xl py-3">Ellipse</h2>
-                <h3 class="text-1xl py-3">Area (A) = 0.5 * b * h</h3>
-                <input class="border-2" type="text" placeholder="b"> cm
-                <input type="text" placeholder="h"> cm <br>
+                <h3 class="text-1xl py-3">Area (A) = π * a * b</h3>
+                <input class="border-3 rounded p-2" type="text" placeholder="b"> cm
+                <input class="my-3 border-3 rounded p-2" type="text" placeholder="h"> cm <br>
                 <button class="bg-cyan-500 px-9 text-white font-bold rounded-lg my-3 py-2">Calculation</button>
             </div>
             
         </section>
-        <section class="bg-slate-100 p-3">
-            <h3 class="text-2xl text-center py-3">Area Calculation</h3>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+
+         <!-- Answer Section -->
+         <section class="bg-slate-200 p-3 font-medium">
+            <h3 class="text-2xl text-center py-3">Area Calculation Result</h3>
+            <textarea class="bg-white" name="" id="" cols="40" rows="20" disabled></textarea>
         </section>
     </main>
+
+
+    <script src="javascript/connection.js"></script>
 </body>
 </html>
