@@ -1,3 +1,9 @@
+// --------- Calculation ------------
+/*
+Process: When a button clicked it will check which geometry calculation need. Then it will process. 
+Total 6 types of calculation but most of the same without the formula. 
+
+*/
 
 // Calculation of the Triangle. 
 document.getElementById('triangle').addEventListener('click', function(){
