@@ -1,7 +1,6 @@
 
-
 // Get the input value from the input field.  
-function getElement(element){
+function getElement(element) {
     const input = document.getElementById(element);        // select the input b.
     const inputFieldValueString = input.value;             // set the string input value. 
     const inputFieldValue = parseFloat(inputFieldValueString);     // convert into floating number. 
@@ -9,22 +8,29 @@ function getElement(element){
     return inputFieldValue;
 }
 
-// Multiply the common two inputs. 
-function multiply (firstInput , secondInput){
+// Multiply the common two inputs (height, width). 
+function multiply(firstInput, secondInput) {
     const inputMultiply = firstInput * secondInput;    // multiply because it is common calculation in every geometry. 
 
     // check the valid input. 
-    if (isNaN(inputMultiply) == false || inputMultiply == ''){
+    if ((isNaN(inputMultiply) == false && inputMultiply > -1 == true) || inputMultiply == '') {
         return inputMultiply;
     }
-    else{
+    else {
         alert('Input is invalid!');
         return getElement();
     }
 }
 
 // Result Show.  
-function resultShow(area){
-    const result = document.getElementById('calculation-result');
-    result.innerText = "Area: " + area + " cm";
+function resultShow(geometryName, area) {
+    const result = document.getElementById('result-list');       // select the element. 
+
+    const li = document.createElement('li');                     // create a element or tag. 
+    li.innerText = geometryName + " : " + area.toFixed(2) + " cm^2";     // add text and result into the tag. 
+    result.appendChild(li);                                      // add the tag. 
 }
+
+
+
+// test 120 line. 
