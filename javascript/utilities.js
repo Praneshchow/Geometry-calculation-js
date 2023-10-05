@@ -1,3 +1,11 @@
+/* 
+--------- Utilities ----------
+Three functions used for doing repetitive work:
+1) getElement() = For taking input data from the input field when button selected. 
+2) multiply() = Multiply the two input which is common every calculation and I also checked the input is valid or not. 
+3) resultShow() = Result show into the box with list. 
+
+*/
 
 // Get the input value from the input field.  
 function getElement(element) {
@@ -32,5 +40,4 @@ function resultShow(geometryName, area) {
 }
 
 
-
-// test 120 line. 
+ 
